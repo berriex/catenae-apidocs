@@ -6,7 +6,7 @@ rvm:
   - 2.0.0
 
 cache: bundler
-script: bundle exec middleman build
+script: bundle exec middleman build --clean && ls .
 deploy:
   provider: surge
   project: ./build/
