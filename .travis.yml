@@ -6,8 +6,9 @@ rvm:
   - 2.0.0
 
 cache: bundler
-script: bundle exec middleman build --clean && ls .
+script: bundle exec middleman build --clean
 deploy:
+  skip_cleanup: true
   provider: surge
-  project: ./build
+  project: ./build/
   domain: docs.catenae-api.surge.sh
