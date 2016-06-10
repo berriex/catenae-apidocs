@@ -9,5 +9,5 @@ cache: bundler
 script: bundle exec middleman build --clean && ls .
 deploy:
   provider: surge
-  project: ./build/
+  project: ./build
   domain: docs.catenae-api.surge.sh
